@@ -1,1 +1,33 @@
 ### Introduction to Algorithm
+- An Algorithm is a finite set of well-defined instructions designed to solve a Problem or Perform a Computation.
+- it takes input systematic and produces the desired output
+- A good algorithm must be clear, efficient and scalable to handle large amounts of data efficency.
+
+* Different way to Write an algorithm.
+i. writing a plain English. (Instruction Step by step)
+ii. PseudoCode -> is a mix of plain language and structure formatting
+iii. writing using flowCharts
+
+** Time Complexity
+  -- The time complexity is the rate at which the execution time of an algortim increases with gradual increase of input size.
+  -- it is not just the total time taken by the program to excute but how the time grows as input grows
+
+** Space Complexity
+ -- refers to the amount of extra space or memory that an algorithm uses as the input size increases
+
+*** The unit of time complexity & space complexity
+--> Asympotic notation:-> are the way of denotaing the time and space complexity of Algorithms
+    1. Big-O Notation — O(n) - > linear search
+    2. Omega Notation — Ω(n)
+    -- Represents the best-case time complexity
+    -- Lower bound of an algorithm
+Example:
+Binary Search (best case) → Ω(1)
+
+   3.  Theta Notation — Θ(f(n))
+
+    -- Represents the average case
+    -- Tight bound (best = worst)
+Example:
+Merge Sort → Θ(n log n)
+Note: 1. PrintStatment :-> for no matter Println statment whatever input provided too same time only. e.g:- variables statment, print statment are all these constatn time only  
