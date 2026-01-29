@@ -1,0 +1,48 @@
+# Array
+- An Array is a collection values stored in contignuous memory location.
+- All the element in an array have same data type and you acess each Values using it index.
+- index will start from zero.
+Syntax :- int arr[] = {1, 2, 3, 4, 5};
+          int arr[] = new int[5];
+** There are two types of Array.
+   1. Rectangular Array
+   2. JAgged Array
+Rectangular Array:- in Rectangular Array we have 
+1. One-Dimensional Array (1D Array)
+- Stores elements in a single row
+- Accessed using one index
+- Most commonly used
+Example:
+int arr[] = {10, 20, 30, 40};
+Representation:
+Index →  0   1   2   3
+Value → 10  20  30  40
+
+2. Two-Dimensional Array (2D Array)
+- Stored in rows and columns
+- Also called matrix
+- Accessed using two indices
+Example:
+int arr[2][3] = {
+  {1, 2, 3},
+  {4, 5, 6}
+};
+Representation:
+1  2  3
+4  5  6
+
+3. Multi-Dimensional Array
+- Array with more than two dimensions
+- Less commonly used
+Example (3D Array):
+int arr[2][2][2];
+
+** Jagged Array
+- Array of arrays
+- Each row can have different length
+Example (Java):
+int arr[][] = {
+  {1, 2},
+  {3, 4, 5},
+  {6}
+};
