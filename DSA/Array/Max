@@ -1,0 +1,30 @@
+## WAp to find the maximum of an array
+import java.util.Scanner;
+
+public class Max {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size: ");
+		int n = sc.nextInt();
+		System.out.println("Enter the element: ");
+		int arr[] = new int[n];
+		for (int i = 0; i <= arr.length-1; i++)
+		{
+			arr[i] = sc.nextInt();
+		}
+		int max = arr[0];
+		for (int i = 0; i <= arr.length-1; i++) {
+			if(arr[i] > max)
+			{
+				max = arr[i];
+			}
+		}
+		System.out.println("Maximum of all array: " + max);
+	}
+}
+o/p
+Enter the size: 
+4
+Enter the element: 
+20 10 50 40
+Maximum of all array: 50
