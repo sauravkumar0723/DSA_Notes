@@ -1,0 +1,37 @@
+## Wap to Reverse and Array element
+import java.util.Scanner;
+public class ReverseArray {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size: ");
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		System.out.println("Enter the element: ");
+		
+		for (int i = 0; i <= arr.length-1; i++)
+		{
+			arr[i] = sc.nextInt();
+		}
+		int revarr[] = new int[n];
+		int j = revarr.length-1;
+		
+		for (int i = 0; i <= arr.length-1; i++)
+		{
+			revarr[j] = arr[i];
+			j--;
+		}
+		System.out.println("reverse array: ");
+		for (int i = 0; i <= arr.length-1; i++)
+		{
+			System.out.print(revarr[i] + " ");
+		}
+	}
+}
+
+o / p :- 
+Enter the size: 
+4
+Enter the element: 
+10 20 30 40
+reverse array: 
+40 30 20 10 
