@@ -1,0 +1,30 @@
+## // Count how many values are the even
+import java.util.Scanner;
+public class CountEven {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size: ");
+		int n = sc.nextInt();
+		System.out.println("Enter the element: ");
+		int arr[] = new int[n];
+		for (int i = 0; i <= arr.length-1; i++)
+		{
+			arr[i] = sc.nextInt();
+		}
+		int count = 0;
+		for (int i = 0; i <= arr.length-1; i++)
+		{
+			if (arr[i] % 2 == 0)
+			{
+				count = count + 1;
+			}
+		}
+		System.out.println("Count the how many values are even: " + count);
+	}
+}
+O/P :- 
+Enter the size: 
+4
+Enter the element: 
+10 25 30 40
+Count the how many values are even: 
