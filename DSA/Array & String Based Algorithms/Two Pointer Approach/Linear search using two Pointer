@@ -1,0 +1,45 @@
+-- Linear search using two Pointer
+
+package com.kodNest.TwoPointerApproach;
+
+import java.util.Scanner;
+
+public class LinearSearchUsingBothTwoPointerApproach {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array Length");
+		int arr[] = new int[sc.nextInt()];
+		
+		System.out.println("Enter "+arr.length+" elements ");
+		for(int i=0;i<=arr.length-1; i++)
+		{
+			arr[i] = sc.nextInt();
+		}
+		System.out.println("Enter key Value");
+		int key = sc.nextInt();
+		
+		int end = arr.length-1;
+		for (int start=0; start<=end; start++)
+		{
+			if(arr[start]==key)
+			{
+				System.out.println("Key found at index "+ start);
+				return;	
+			} else if(arr[end] == key)
+			{
+				System.out.println("key found at index "+end);
+				return;
+			}
+		}
+		System.out.println("Key Not Found");
+	}
+}
+
+
+Enter array Length
+5
+Enter 5 elements 
+20 10 5 60 70
+Enter key Value
+60
+Key found at index 3
