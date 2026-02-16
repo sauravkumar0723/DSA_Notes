@@ -1,0 +1,50 @@
+-- The Two-Pointer Approach is a technique where we use two pointers to traverse an array or list. 
+These pointers move at different speeds or directions to efficiently solve problems, like finding pairs or searching for specific values.
+
+----------******--------------logic
+package com.kodNest.TwoPointerApproach;
+import java.util.Scanner;
+
+public class TwoPointerApproach {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array length");
+		int arr[] = new int[sc.nextInt()];
+		
+		System.out.println("Enter " +arr.length+" elements in ascending order");
+		for(int i = 0; i <=arr.length-1; i++)
+		{
+			arr[i] = sc.nextInt();
+		}
+		System.out.println("Enter the Target Value");
+		int target = sc.nextInt();
+		
+		int start = 0;
+		int end = arr.length-1;
+		while(start<end)
+		{
+		int sum = arr[start] +arr[end];
+		
+		if (sum==target)
+		{
+			System.out.println("pair found  ( "+arr[start]+" "+arr[end]+" )");
+			return;
+		}
+		else if(sum>target) {
+			end--;
+		} else {
+			start++;
+		}
+		}
+		System.out.println("Pair not found");
+	}
+}
+
+Enter array length
+4
+Enter 4 elements in ascending order
+ 10 20 30 40
+Enter the Target Value
+30
+pair found  ( 10 20 )
+
