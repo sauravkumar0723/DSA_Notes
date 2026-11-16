@@ -1,0 +1,23 @@
+#Binary Search
+Q. What is Binary Search?
+Standard Definition:
+- Binary Search is an efficient searching algorithm that works by repeatedly dividing a sorted list into halves until the target element is found.
+- Work only on sorted order.
+Algorith of Binary Search
+int low = 0;
+int high = arr.length-1;
+
+as long as (low <= high) {
+  int mid = (low+high) / 2;
+ }
+   if (key == arr[mid])
+    {
+        return "key found";
+    }
+     else if(key<arr[mid]) {
+     high = mid - 1;
+    } else {
+     low = mid + 1;
+    }
+  }
+return "not found"
