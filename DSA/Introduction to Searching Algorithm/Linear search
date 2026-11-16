@@ -1,0 +1,44 @@
+# Linear search
+Q. What Is Linear Search?
+
+Standard Definition
+
+- Linear Search is a searching algorithm where we start from the first element of an array and check each element one by one until:
+. the target element is found, or
+. we reach the end of the array.
+
+Pseudocode of Linear Search
+
+start from index 0
+for each element in the array
+if element = = target
+return index
+if loop ends
+return -1
+
+Why pseudocode matters:
+
+. It shows the logic clearly
+. It is language independent
+. It helps you think before writing code
+Java Code Example: Linear Search
+
+public class LinearSearchExample {
+public static void main(String[] args) {
+
+int[] numbers = {3, 8, 4, 12, 7, 15};
+int target = 12;
+boolean found = false;
+
+for (int i = 0; i < numbers.length; i++) {
+if (numbers[i] == target) {
+System.out.println("Found " + target + " at index " + i);
+found = true;
+break;
+}
+    if (!found) {
+       System.out.printIn(target + " is not in the array.");
+    }
+ }
+}
+
