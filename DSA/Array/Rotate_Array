@@ -1,0 +1,34 @@
+# Rotate Array
+
+public class RotateArray {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter an array size:");
+		int n = sc.nextInt();
+		System.out.println("create the array:");
+		int arr[] = new int[n];
+		System.out.println("Populate the array with user input: ");
+		for(int i = 0; i <= arr.length-1; i++) {
+			arr[i] = sc.nextInt();
+		}
+		System.out.println("Rotate the array by right k steps");
+		int k = sc.nextInt();
+		System.out.println("Rotate the array:");
+		int arr2[] = new int[n];
+		for(int i = 0; i <= arr.length-1; i++) {
+			arr2[(i + k) % n] = arr[i];
+		}
+		System.out.println(Arrays.toString(arr2));
+	}
+}
+
+output:- 
+Enter an array size:
+5
+create the array:
+Populate the array with user input: 
+10 20 30 40 50 
+Rotate the array by right k steps
+3
+Rotate the array:
+[30, 40, 50, 10, 20]
