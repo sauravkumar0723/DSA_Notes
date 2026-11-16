@@ -1,0 +1,32 @@
+Q. Count How Many Numbers Are Even 
+
+package com.pratice.DSA;
+
+import java.util.Scanner;
+
+public class CountHowManyNumbersAreEven {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array size");
+		int a = sc.nextInt();
+		int []arr = new int[a];
+		int count = 0;
+		System.out.println("Enter array elements: ");
+		for(int i = 0; i <= arr.length-1;i++) {
+			arr[i] = sc.nextInt();
+		}
+		for(int i = 0; i <= arr.length-1; i++) {
+			if(arr[i] % 2 == 0) {
+				count += 1;
+			}
+		}
+		System.out.println("The count number of even is: " + count);
+	}
+}
+
+Output:- 
+Enter array size
+5
+Enter array elements: 
+4 7 20 30 40
+The count number of even is: 4
