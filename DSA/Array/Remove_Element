@@ -1,0 +1,38 @@
+# RemoveElement 
+package com.pratice.DSA;
+
+import java.util.Scanner;
+
+public class RemoveElement {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a array size:");
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		System.out.println("Populate the array with user input");
+		for(int i = 0; i < arr.length-1; i++) {
+			arr[i] = sc.nextInt();
+		}
+		System.out.println("Enter the remove element number:");
+		int remove = sc.nextInt();
+		int key = 0;
+		for(int i = 0; i < arr.length-1; i++) {
+			if(arr[i] != remove) {
+				arr[key] = arr[i];
+				key++;
+			}
+		}
+		System.out.println("After removing the element is:" + key);
+	}
+
+}
+
+o/p :->
+Enter a array size:
+5
+Populate the array with user input
+3 2 2 3
+Enter the remove element number:
+3
+After removing the element is: 2
+
