@@ -1,0 +1,48 @@
+Problem Statement:
+Count how many elements are greater than a given value X.
+Thought Process:
+We check each value against X. If it's greater, we increase our counter.
+Logic Steps:
+
+1. Take X.
+2. Loop through the array.
+3. Check if element > X.
+4. If yes, increase count.
+5. Print col
+count.
+
+package com.pratice.DSA;
+
+import java.util.Scanner;
+
+public class CounthowmanyelementsaregreaterthanagivenvalueX {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array size");
+		int a = sc.nextInt();
+		int []arr = new int[a];
+		int count = 0;
+		System.out.println("Enter the input: ");
+		int x = sc.nextInt();
+		System.out.println("Enter array elements: ");
+		for(int i = 0; i <= arr.length-1;i++) {
+			arr[i] = sc.nextInt();
+		}
+		for(int i = 0; i <= arr.length-1; i++) {
+			if(arr[i] > x) {
+				count++;
+			}
+		}
+		System.out.println("Count how many elements are greater than a given value X is: "+ count);
+	}
+}
+
+
+O/p:=
+Enter array size
+5
+Enter the input: 
+10
+Enter array elements: 
+5 2 20 30 41
+Count how many elements are greater than a given value X is: 3
